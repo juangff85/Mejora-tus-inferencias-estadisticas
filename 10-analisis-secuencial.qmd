@@ -1,0 +1,9 @@
+---
+title: "Análisis secuencial"
+---
+
+# Análisis secuencial
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "10-analisis-secuencial.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

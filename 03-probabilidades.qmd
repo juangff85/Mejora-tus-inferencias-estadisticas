@@ -1,0 +1,9 @@
+---
+title: "Probabilidades"
+---
+
+# Probabilidades
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "03-probabilidades.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

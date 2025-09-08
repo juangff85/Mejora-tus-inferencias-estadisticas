@@ -1,0 +1,9 @@
+---
+title: "Sesgo de confirmación y escepticismo organizado"
+---
+
+# Sesgo de confirmación y escepticismo organizado
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "16-sesgo-de-confirmacion-y-escepticismo-organizado.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

@@ -1,0 +1,9 @@
+---
+title: "Formulación de preguntas estadísticas"
+---
+
+# Formulación de preguntas estadísticas
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "05-formulacion-de-preguntas-estadisticas.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

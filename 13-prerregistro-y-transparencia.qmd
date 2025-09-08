@@ -1,0 +1,9 @@
+---
+title: "Prerregistro y transparencia"
+---
+
+# Prerregistro y transparencia
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "13-prerregistro-y-transparencia.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

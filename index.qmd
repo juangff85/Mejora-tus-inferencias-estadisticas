@@ -1,0 +1,12 @@
+---
+title: "Mejora tus inferencias estadísticas"
+subtitle: "Borrador"
+---
+
+# Bienvenida
+
+Este es el sitio del libro **Mejora tus inferencias estadísticas**. Aquí puedes presentar el propósito, la audiencia y cómo está organizado.
+
+::: callout-note
+**Sugerencia:** cada capítulo es un archivo `.qmd`. Edita la lista en `_quarto.yml` para controlar el orden.
+:::

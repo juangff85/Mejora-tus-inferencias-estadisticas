@@ -1,0 +1,9 @@
+---
+title: "Detección de sesgos"
+---
+
+# Detección de sesgos
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "12-deteccion-de-sesgos.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

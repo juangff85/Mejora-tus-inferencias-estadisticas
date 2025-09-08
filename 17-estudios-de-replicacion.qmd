@@ -1,0 +1,9 @@
+---
+title: "Estudios de replicación"
+---
+
+# Estudios de replicación
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "17-estudios-de-replicacion.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

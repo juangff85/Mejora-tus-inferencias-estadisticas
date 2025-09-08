@@ -1,0 +1,9 @@
+---
+title: "Integridad de la investigación"
+---
+
+# Integridad de la investigación
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "15-integridad-de-la-investigacion.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

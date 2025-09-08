@@ -1,0 +1,9 @@
+---
+title: "Justificación del tamaño de la muestra"
+---
+
+# Justificación del tamaño de la muestra
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "08-justificacion-del-tamano-de-la-muestra.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

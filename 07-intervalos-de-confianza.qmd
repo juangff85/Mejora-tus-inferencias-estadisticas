@@ -1,0 +1,9 @@
+---
+title: "Intervalos de confianza"
+---
+
+# Intervalos de confianza
+
+<!-- Pega aquí el contenido del capítulo o conviértelo desde Word con Pandoc:
+pandoc "Capitulo_1.docx" -t gfm -o "07-intervalos-de-confianza.qmd"
+Revisa encabezados, listas y tablas tras la conversión. -->

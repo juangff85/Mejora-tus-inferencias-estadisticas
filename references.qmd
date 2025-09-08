@@ -1,0 +1,7 @@
+---
+title: "Referencias"
+---
+
+# Referencias
+
+Incluye aquí tu bibliografía. Si usas un `references.bib`, cita con `@clave` y añade `bibliography: references.bib` en `_quarto.yml` o en los metadatos del capítulo.

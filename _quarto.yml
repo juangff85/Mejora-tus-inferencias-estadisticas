@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Mejora tus inferencias estadísticas"
+  author: "Juan G. Fernández"
+  lang: es
+  chapters:
+    - index.qmd
+    - 01-uso-de-valores-p-para-probar-una-hipotesis.qmd
+    - 02-control-de-errores.qmd
+    - 03-probabilidades.qmd
+    - 04-estadistica-bayesiana.qmd
+    - 05-formulacion-de-preguntas-estadisticas.qmd
+    - 06-tamanos-del-efecto.qmd
+    - 07-intervalos-de-confianza.qmd
+    - 08-justificacion-del-tamano-de-la-muestra.qmd
+    - 09-pruebas-de-equivalencia-e-hipotesis-de-intervalo.qmd
+    - 10-analisis-secuencial.qmd
+    - 11-metanalisis.qmd
+    - 12-deteccion-de-sesgos.qmd
+    - 13-prerregistro-y-transparencia.qmd
+    - 14-reproducibilidad-computacional.qmd
+    - 15-integridad-de-la-investigacion.qmd
+    - 16-sesgo-de-confirmacion-y-escepticismo-organizado.qmd
+    - 17-estudios-de-replicacion.qmd
+    - references.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.scss
+    number-sections: true
+    toc: true
+    page-navigation: true
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
