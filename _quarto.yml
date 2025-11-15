@@ -2,10 +2,11 @@ project:
   type: book
   output-dir: _book
 
+lang: es   # ← aquí, al nivel superior (no dentro de book)
+
 book:
   title: "Mejora tus inferencias estadísticas"
   author: "Juan G. Fernández"
-  lang: es
   chapters:
     - index.qmd
     - 01-uso-de-valores-p-para-probar-una-hipotesis.qmd
@@ -18,7 +19,7 @@ book:
     - 08-justificacion-del-tamano-de-la-muestra.qmd
     - 09-pruebas-de-equivalencia-e-hipotesis-de-intervalo.qmd
     - 10-analisis-secuencial.qmd
-    - 11-metanalisis.qmd
+    - 11-metaanalisis.qmd
     - 12-deteccion-de-sesgos.qmd
     - 13-prerregistro-y-transparencia.qmd
     - 14-reproducibilidad-computacional.qmd
@@ -38,3 +39,6 @@ format:
     documentclass: scrreprt
 
 editor: visual
+
+execute:
+  freeze: auto   
