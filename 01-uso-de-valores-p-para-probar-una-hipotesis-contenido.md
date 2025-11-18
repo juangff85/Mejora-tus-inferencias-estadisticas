@@ -1,3 +1,10 @@
+**Atribución y licencia**
+
+Traducción no oficial de: **Lakens, D. (2022). *Improving Your
+Statistical Inferences*** (Sección "1.8 Test Yourself"). Recurso
+original con **licencia CC BY-NC-SA** (Atribución--No
+Comercial--Compartir Igual). Fuente: libro online y página del capítulo.
+
 **1 Uso de los valores *p* para contrastar una hipótesis**
 
 Los científicos intentan responder a preguntas muy diversas recopilando
@@ -46,7 +53,7 @@ nula. Este planteamiento (pruebas de significación)
 evalúa **incompatibilidades del modelo** y no especifica una hipótesis
 alternativa. Fisher intentó formalizarlo como **inferencia fiducial**,
 hoy minoritaria frente a teorías de decisión, verosimilitud o inferencia
-bayesiana. [[lakens.github.io]{.underline}](https://lakens.github.io/statistical_inferences/01-pvalue.html)
+bayesiana. 
 
 En el enfoque **Neyman-Pearson**, se **especifican H₀ y H₁** y las
 pruebas **guían la acción**: si *p* es menor que α, se actúa "como si"
@@ -98,7 +105,7 @@ importa es **qué ocurre a largo plazo**:
 
 -   Si el estadístico es **discreto** (p. ej., ciertos usos del
     ji-cuadrado), la distribución de *p* **no** es
-    uniforme. [[lakens.github.io]{.underline}](https://lakens.github.io/statistical_inferences/01-pvalue.html)
+    uniforme. 
 
 **1.5 La paradoja de Lindley**
 
@@ -152,7 +159,7 @@ el **modelo nulo** (curva roja), el **alternativo** (azul) y el **valor
 crítico** que separa resultados significativos de no significativos. El
 texto usa la figura de "**Omniscient Jones**" (quien conoce la
 diferencia verdadera) para razonar sobre potencia y
-evidencias. [[Lakens+1]{.underline}](https://lakens.github.io/statistical_inferences/01-pvalue.html)
+evidencias. 
 
 **1.7.1 Malentendido 1: "Un *p* no significativo (p \> .05) significa
 que H₀ es verdadera."**
@@ -161,7 +168,7 @@ No. Un *p* no significativo indica que **no** hay base suficiente (bajo
 ese procedimiento y α) para **afirmar** una diferencia; **no**confirma
 que la diferencia sea exactamente cero. Si quieres sostener "no hay
 efecto relevante", necesitas, por ejemplo, una **prueba de
-equivalencia** con márgenes previamente definidos. [Lakens]{.underline}
+equivalencia** con márgenes previamente definidos. 
 
 **1.7.2 Malentendido 2: "Un *p* significativo (p \< .05) demuestra que
 H₀ es falsa."**
@@ -170,7 +177,7 @@ Tampoco. Un resultado significativo solo dice que **es
 improbable** observar datos así **si H₀ fuese cierta**. El marco de
 Neyman--Pearson guía **decisiones** (actuar "como si" H₁ fuera cierta
 cuando *p* \< α), pero **no** cuantifica una probabilidad de verdad de
-las hipótesis. [Lakens]{.underline}
+las hipótesis. 
 
 **1.7.3 Malentendido 3: "Significativo = importante."**
 
@@ -178,7 +185,7 @@ No necesariamente. "Significativo" equivale mejor a **"sorprendente bajo
 H₀"**. La **relevancia práctica** exige mirar **tamaños del
 efecto**, **intervalos de confianza** y el **contexto**. Un efecto
 diminuto puede ser significativo con *n* grande y, aun así, **poco
-útil**. [Lakens]{.underline}
+útil**. 
 
 **1.7.4 Malentendido 4: "Si hallas un resultado significativo, la
 probabilidad de que sea un falso positivo es 5%."**
@@ -188,7 +195,7 @@ verdadera** (α), **antes** de ver los datos. Si supiéramos que H₀ es
 cierta, **todos** los significativos serían falsos positivos (100%).
 Tras observar *p* \< α, la pregunta "¿cuál es la probabilidad de que H₀
 sea verdadera?" **no** la responde el *p*; requeriría información previa
-(p. ej., un marco bayesiano). [Lakens]{.underline}
+(p. ej., un marco bayesiano). 
 
 **1.7.5 Malentendido 5: "1 − *p* es la probabilidad de replicación."**
 
@@ -204,50 +211,32 @@ factores (variabilidad, diseño, ejecución...). **No puede derivarse de 1
 **Instrucciones.** Copia este código en **R** y ejecútalo. El script
 simula 100 000 estudios, hace una **t** de una muestra contra 100 y
 dibuja el histograma de *p*-valores, mostrando también la potencia
-aproximada. [Lakens]{.underline}
+aproximada. 
 
 nsims \<- 100000 \# número de simulaciones
-
 m \<- 106 \# media muestral simulada
-
 n \<- 26 \# tamaño muestral
-
 sd \<- 15 \# desviación típica de los datos simulados
-
 p \<- numeric(nsims) \# vector vacío para p-valores
-
 bars \<- 20 \# número de barras del histograma
 
 for (i in 1:nsims) { \# para cada \"experimento\"
-
 x \<- rnorm(n = n, mean = m, sd = sd)
-
 z \<- t.test(x, mu = 100) \# t de una muestra
-
 p\[i\] \<- z\$p.value \# guardamos el p-valor
-
 }
 
 power \<- round((sum(p \< 0.05) / nsims), 2) \# potencia
-
 \# Gráfico
 
 hist(p,
-
 breaks = bars, xlab = \"p-valores\", ylab = \"número de p-valores\\n\",
-
 axes = FALSE, main = paste(\"Distribución de p con\",
-
 round(power \* 100, 1), \"% de potencia\"),
-
 col = \"grey\", xlim = c(0, 1), ylim = c(0, nsims))
-
 axis(side = 1, at = seq(0, 1, 0.1), labels = seq(0, 1, 0.1))
-
 axis(side = 2, at = seq(0, nsims, nsims / 4),
-
 labels = seq(0, nsims, nsims / 4), las = 2)
-
 abline(h = nsims / bars, col = \"red\", lty = 3) \# línea roja = alfa
 del 5%
 
@@ -317,12 +306,12 @@ Igual · \~4× · \~10× · \~30×
 
 Conclusión de esta parte: los *p* justo por debajo de .05, **en el mejor
 caso**, son como mucho un apoyo **débil** a H₁; conviene replicar o ser
-cauto al interpretarlos. [Lakens]{.underline}
+cauto al interpretarlos.
 
 **1.8.2 Preguntas sobre malentendidos del *p*-valor**
 
 Responde y contrasta con tus simulaciones o con la app enlazada en el
-capítulo. [Lakens]{.underline}
+capítulo.
 
 **Q1.** Con *t* independiente y **n = 50 por grupo**, ¿qué afirmación es
 correcta?
@@ -422,11 +411,4 @@ replicación**?
 13. Si no puedes usar NHST para concluir **no hay efecto
     significativo/útil**, ¿qué enfoques usarías (p.
     ej., **equivalencia**, **región de irrelevancia**,
-    etc.)? [Lakens]{.underline}
-
-**Atribución y licencia**
-
-Traducción no oficial de: **Lakens, D. (2022). *Improving Your
-Statistical Inferences*** (Sección "1.8 Test Yourself"). Recurso
-original con **licencia CC BY-NC-SA** (Atribución--No
-Comercial--Compartir Igual). Fuente: libro online y página del capítulo.
+    etc.)? 
