@@ -1,11 +1,11 @@
 ---
 title: "Mejora tus inferencias estadísticas"
-subtitle: "Borrador"
+subtitle: "Traducción al castellano de Improving your Statistical Infereces, de Daniël Lakens (Noviembre 2025)"
 ---
 
 # Bienvenida
 
-Este es el sitio del libro **Mejora tus inferencias estadísticas**. Aquí puedes presentar el propósito, la audiencia y cómo está organizado.
+Este recurso educativo abierto contiene información para mejorar las inferencias estadísticas, diseñar mejores experimentos y comunicar la investigación científica de manera más transparente. Agradezco al profesor Daniël Lakens su permiso para traducir este material al castellano.
 
 ::: callout-note
 **Sugerencia:** cada capítulo es un archivo `.qmd`. Edita la lista en `_quarto.yml` para controlar el orden.
